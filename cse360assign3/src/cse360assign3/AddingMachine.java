@@ -20,12 +20,12 @@ public class AddingMachine {
 	 * total is a member integer that hold the result of the operations
 	 *  performed.
 	 */
-	private int total;
+	protected int total;
 	/**
 	 * operationsString is a string that holds the operations
 	 *  done on total.
 	 */
-	private String operationsString;
+	protected String operationsString;
 	/**
 	 * public constructor that assigns the "total" member variable
 	 *  to 0. Also sets the string operationsString to "0"
