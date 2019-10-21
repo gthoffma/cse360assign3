@@ -80,6 +80,22 @@ class CalculatorTest {
 	}
 	
 	@Test
+	void testDivZero() {
+		Calculator myCalculator = new Calculator();
+		myCalculator.add(50);
+		myCalculator.div(0);
+		assertTrue(myCalculator.toString().equals("0 + 50 / 0") && myCalculator.getTotal() == 0);
+	}
+	
+	@Test
+	void testPowNegative() {
+		Calculator myCalculator = new Calculator();
+		myCalculator.add(2);
+		myCalculator.power(-1);
+		assertTrue(myCalculator.toString().equals("0 + 2 ^ -1") && myCalculator.getTotal() == 0);
+	}
+	
+	@Test
 	void testAll() {
 		Calculator myCalculator = new Calculator();
 		myCalculator.add(20);
