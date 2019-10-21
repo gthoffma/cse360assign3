@@ -44,7 +44,7 @@ class CalculatorTest {
 	}
 	
 	@Test
-	void testAllCalcComponents() {
+	void testAllAddingMachineComponents() {
 		Calculator myCalculator = new Calculator();
 		myCalculator.add(5);
 		myCalculator.subtract(10);
